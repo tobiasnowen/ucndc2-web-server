@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "debug": "nodemon --inspect-brk app/index.js",
-    "start": "nodemon app/index.js -e js,hbs,html",
+    "monitorDebug": "nodemon --inspect-brk app/index.js",
+    "monitor": "nodemon app/index.js -e js,hbs,html",
+    "start": "node app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

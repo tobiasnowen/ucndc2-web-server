@@ -3,6 +3,7 @@ const path = require('path');
 const hbs = require('hbs');
 const fs = require('fs');
 const os = require('os');
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -31,6 +32,6 @@ app.get('/', (req, res) => {
 app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(3000, () => {
-    console.log(`Running on port 3000 from directory '${__dirname}'`);
+app.listen(port, () => {
+    console.log(`Running on port ${port} from directory '${__dirname}'`);
 });
