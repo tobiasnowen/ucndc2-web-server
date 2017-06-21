@@ -1,0 +1,23 @@
+{
+  "name": "udemy_the-complete-nodejs-developer-course-2_5-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "nodemon --inspect-brk app/index.js",
+    "start": "nodemon app/index.js -e js,hbs,html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "express": "^4.15.3",
+    "hbs": "^4.0.1",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7",
+    "request": "^2.81.0",
+    "rxjs": "^5.4.1",
+    "yargs": "^8.0.2"
+  }
+}
